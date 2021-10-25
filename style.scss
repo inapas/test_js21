@@ -1,0 +1,61 @@
+$primary-color: #77a8f7;
+$secondary-color: #74dded;
+$text-color: #f8fc0a;
+$font-top: 'Zen Kurenaido', sans-serif;
+$container-width: 100%;
+
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.virsus {
+    text-align: center;
+    background-color: $primary-color;
+    color: $text-color;   
+    line-height: 4em;
+    font-family: $font-top;
+    
+    
+}
+
+.contacts{
+
+    @include flexColumn();
+
+    line-height: 4em;
+    
+    
+    form{
+        
+        width: 75%;
+        background-color: $secondary-color;
+        padding-left: 20px;
+        
+        
+    }
+
+    aside{
+        background-color: $secondary-color;
+        border-right: 20px wheat;
+        width: 24.8%;
+        margin-right: 0.2%;
+        padding-left: 30px;
+
+        li{
+            list-style-type: none;
+        }
+       
+    }
+}
+
+
